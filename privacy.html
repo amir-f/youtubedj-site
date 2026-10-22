@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · YouTube DJ</title>
+  <meta name="description" content="How YouTube DJ handles your data, including the read-only access to your YouTube account.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <a class="brand" href="./">
+      <img src="icon.png" alt="">
+      <div>
+        <h1>YouTube <b>DJ</b></h1>
+        <p>Privacy policy</p>
+      </div>
+    </a>
+
+    <p class="muted">Last updated: October 20, 2026</p>
+
+    <div class="card">
+      <p><b>In short:</b> YouTube DJ runs entirely on your Mac. If you sign in with Google, it gets read-only access to your YouTube account and uses it only to show your own playlists and liked music in the app. Nothing is sent to the developer or anyone else, and you can remove the access at any time.</p>
+    </div>
+
+    <h2>What YouTube DJ is</h2>
+    <p>YouTube DJ is a desktop app for macOS, made by Amir, that lets you mix YouTube tracks on two virtual decks. It runs locally on your computer. There is no YouTube DJ server, account system, analytics or advertising.</p>
+
+    <h2>Signing in with Google (optional)</h2>
+    <p>You can use YouTube DJ without signing in. If you choose <b>Sign in with Google</b>, you sign in on Google's own page in your web browser. YouTube DJ never sees your Google password.</p>
+    <p>YouTube DJ requests a single permission, <b>"See your YouTube account"</b> (<code>https://www.googleapis.com/auth/youtube.readonly</code>). It cannot upload, delete, like, comment or change anything in your account. With this permission YouTube DJ reads, through the YouTube Data API:</p>
+    <ul>
+      <li>your YouTube channel name, to show who you're signed in as;</li>
+      <li>the list of your playlists, and the videos in a playlist when you open it;</li>
+      <li>your liked videos, to show your liked music.</li>
+    </ul>
+    <p>This information is used only to display your playlists and liked music inside the app, so you can play and mix them. It is not used for any other purpose.</p>
+
+    <h2>Where your data is kept</h2>
+    <ul>
+      <li>The sign-in token from Google is stored only on your Mac, in YouTube DJ's data folder (<code>~/Library/Application Support/YouTube DJ</code>), readable only by your user account.</li>
+      <li>The last playlist you opened, your settings, cue points and similar preferences are stored in the app's local storage on your Mac.</li>
+      <li>Audio for tracks you load is cached in the same data folder so it doesn't need downloading again. This uses only publicly available YouTube content and never uses your Google account.</li>
+    </ul>
+    <p>YouTube DJ does not send any of this to the developer or to any third party. The only services it contacts are Google's (to sign in and read your YouTube data), YouTube (to load the tracks you choose) and <a href="https://lrclib.net">LRCLIB</a>, a public lyrics database, which receives the title, artist and length of each track you load to look up its lyrics (for the lyrics view, and to know where the track sings when mixing). LRCLIB never receives any of your Google data. It also checks this website for the latest version number, to tell you when an update is out; that request carries nothing about you.</p>
+
+    <h2>Sharing</h2>
+    <p>YouTube DJ does not sell, share, transfer or disclose your Google user data to anyone. It is not used for advertising, and it is not used to train any AI or machine-learning models.</p>
+    <p>YouTube DJ's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>YouTube API Services</h2>
+    <p>YouTube DJ uses YouTube API Services. By using YouTube DJ's Google sign-in you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+    <h2>Removing access and deleting your data</h2>
+    <ul>
+      <li><b>Sign out</b> in YouTube DJ deletes the sign-in token from your Mac and revokes YouTube DJ's access at Google.</li>
+      <li>You can also remove access at any time in your Google Account's <a href="https://myaccount.google.com/permissions">third-party access settings</a>.</li>
+      <li>To remove everything YouTube DJ stored, quit the app and delete <code>~/Library/Application Support/YouTube DJ</code>.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>YouTube DJ is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? <a href="https://github.com/amir-f/youtubedj-site/issues">Open an issue</a>, or use the support email shown on YouTube DJ's Google sign-in screen.</p>
+
+    <footer>
+      Made by Amir · <a href="./">Home</a>
+    </footer>
+  </main>
+</body>
+</html>
